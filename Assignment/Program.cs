@@ -4,7 +4,7 @@ namespace Assignemnt
 {
     class Program
     {
-        static object Main(string[] args)
+        static void Main(string[] args)
         {
             do
             {
@@ -32,31 +32,33 @@ namespace Assignemnt
 
 
                 switch (Console.ReadLine())
+                   
                 {
 
                     case "*":
-                        result = num0 * num1;
-                        Console.WriteLine($"Your answer: {num0} * {num1} = " + result);
+                        result = num0 + num1;
+                        Console.WriteLine($"Your answer: {num0} * {num1} = {(num0, num1 + result)}"); 
                         break;
 
                     case "+":
                         result = num0 + num1;
-                        Console.WriteLine($"Your answer: {num0} + {num1} = " + result);
+                        Console.WriteLine($"Your answer: {num0} + {num1} = {(num0, num1 + result)}");
                         break;
 
                     case "-":
                         result = num0 - num1;
-                        Console.WriteLine($"Your answer: {num0} - {num1} = " + result);
+                        Console.WriteLine($"Your answer: {num0} - {num1} = {(num0, num1 + result)}");
                         break;
 
                     case "/":
                         result = num0 / num1;
-                        Console.WriteLine($"Your answer: {num0} / {num1} = " + result);
+                        Console.WriteLine($"Your answer: {num0} / {num1} = {(num0, num1 + result)}");
                         break;
 
                     default:
                         Console.WriteLine("Unvalid command");
-                        break; //end of main
+                        break;
+                        
                 }
                 Console.WriteLine("Keep going? (O = ok, N = no)");
 
@@ -65,56 +67,13 @@ namespace Assignemnt
             } while (Console.ReadLine().ToUpper() == "Y");
             Console.WriteLine("Goodbye");
             Console.ReadKey();
-            // end of program
 
 
+        }//end of main
 
 
+        
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            }
-
-
-
-    }
+    }// end of program
 }
