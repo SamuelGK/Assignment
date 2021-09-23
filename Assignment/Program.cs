@@ -2,7 +2,7 @@
 
 namespace Assignemnt
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -36,23 +36,23 @@ namespace Assignemnt
                 {
 
                     case "*":
-                        result = num0 + num1;
-                        Console.WriteLine($"Your answer: {num0} * {num1} = {(num0, num1 + result)}"); 
+                        // result = num0 + num1; 
+                        Console.WriteLine($"Your answer: {num0} * {num1} = {Multi(num0, num1)}"); 
                         break;
 
                     case "+":
-                        result = num0 + num1;
-                        Console.WriteLine($"Your answer: {num0} + {num1} = {(num0, num1 + result)}");
+                        // result = num0 + num1;
+                        Console.WriteLine($"Your answer: {num0} + {num1} = {Addition(num0, num1)}");
                         break;
 
                     case "-":
-                        result = num0 - num1;
-                        Console.WriteLine($"Your answer: {num0} - {num1} = {(num0, num1 + result)}");
+                        // result = num0 - num1;
+                        Console.WriteLine($"Your answer: {num0} - {num1} = {Substract(num0, num1)}");
                         break;
 
                     case "/":
-                        result = num0 / num1;
-                        Console.WriteLine($"Your answer: {num0} / {num1} = {(num0, num1 + result)}");
+                        // result = num0 / num1;
+                        Console.WriteLine($"Your answer: {num0} / {num1} = {Divide(num0, num1)}");
                         break;
 
                     default:
@@ -71,9 +71,24 @@ namespace Assignemnt
 
         }//end of main
 
+        public static double Divide(double num0, double num1)
+        {
+            return num0 / num1;
+        }
 
-        
+        public static double Substract(double num0, double num1)
+        {
+            return num0 - num1;
+        }
 
+        public static double Addition(double num0, double num1)
+        {
+            return num0 + num1;
+        }
 
+        public static double Multi(double num0, double num1)
+        {
+            return num0 * num1;
+        }
     }// end of program
 }
